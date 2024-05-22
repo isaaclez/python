@@ -1,0 +1,3 @@
+Calcular los primeros 1000 numeros primos y guardarlos en un archivo
+Leer el archivo del quijote y contas cuantas vocales hay 
+
