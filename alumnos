@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class edadMaximaMinima {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int edadesAlumnos;
+        int edadMaxima = 0;
+        int edadMinima = 0;
+
+        System.out.print("INTRODUZCA LAS EDADES DE LOS ALUMNOS Y ESCRIBE -1 PARA TERMINAR\n");
+
+        do {
+            System.out.print("EDAD DEL ALUMNO: ");
+            edadesAlumnos = sc.nextInt();
+
+
+            if (edadesAlumnos > edadMaxima){
+                edadMaxima = edadesAlumnos;
+            }
+
+            if (edadesAlumnos < edadMinima){
+                edadMinima = edadesAlumnos;
+            }
+
+        } while (edadesAlumnos != -1);
+
+        System.out.print("LA EDAD MAXIMA ES: " + edadMaxima + "\n");
+        System.out.print("LA EDAD MINIMA ES: " + edadMinima);
